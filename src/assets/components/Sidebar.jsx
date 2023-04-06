@@ -1,5 +1,5 @@
 import React from "react";
-import { IconName } from "react-icons/ri";
+import { RiHome4Line,RiSuitcaseLine, RiBook3Line } from "react-icons/ri";
 
 function Sidebar() {
   return (
@@ -16,16 +16,20 @@ function Sidebar() {
       </div>
 
       {/*Contenedor inferior  */}
-      <nav className="">
-        <li className="">
-          <a href="" className=""></a>
-          <a href="" className=""></a>
-          <a href="" className=""></a>
-          <a href="" className=""></a>
-        </li>
+      <nav className="bg-indigo-600 p-8 rounded-tr-full">
+        <a className="flex">
+          <RiHome4Line /> Home
+        </a>
+        <a className="">
+            <RiSuitcaseLine/> Projects
+        </a>
+        <a className="">
+            <RiBook3Line/> Invoices
+        </a>
+        <a className=""></a>
       </nav>
     </div>
-  );
+  ); 
 }
 
 export default Sidebar;
