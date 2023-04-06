@@ -12,7 +12,7 @@ function Sidebar() {
   const [showMenu, setShowMenu] = useState(true);
   return (
     <div
-      className={`bg-indigo-900 text-white h-full fixed lg:static lg:w-full w-[80%] md:w-[40%] transition-all duration-300 ${
+      className={`bg-indigo-900 text-white h-full fixed lg:static lg:w-full w-[80%] md:w-[40%] transition-all duration-300 z-50 ${
         showMenu ? "left-0" : "-left-full"
       }`}
     >
@@ -52,7 +52,7 @@ function Sidebar() {
       {/* button movil */}
       <button
         onClick={() => setShowMenu(!showMenu)}
-        className="fixed bottom-4 right-4 bg-indigo-600 p-3 rounded-full text-2xl lg:hidden"
+        className="fixed bottom-4 right-4 bg-indigo-600 p-3 rounded-full text-2xl lg:hidden z-50"
       >
         {showMenu ? <RiCloseFill /> : <RiMore2Line />}
       </button>
