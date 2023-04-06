@@ -3,7 +3,7 @@ import Sidebar from './assets/components/Sidebar'
 
 function App() {
   return (
-    <div className=''>
+    <div className='grid grid-cols-6 min-h-screen'>
       <Sidebar/>
     </div>  
   )
